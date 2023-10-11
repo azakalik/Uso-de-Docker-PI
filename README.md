@@ -17,7 +17,7 @@ Ustedes probablemente tienen una carpeta llamada `PI` (o algo similar) en la que
 Lo que vamos a hacer ahora es crear nuestro container de docker, utilizando una imagen de `ubuntu`. Este paso se debe hacer UNA SOLA vez (una vez creado el container, no volver a crearlo).
 Le vamos a dar el nombre `ubuntu-PI` a nuestro container, y nuestros archivos quedaran en el path `/PI` del container.
 1. Abrir la aplicacion de docker haciendo doble click (una vez abierta la pueden minimizar, no hace falta tocar nada)
-2. Ejecutar el comando ```docker create -it --name ubuntu-PI -v /home/user/PI:PI ubuntu /bin/bash```
+2. Ejecutar el comando ```docker create -it --name ubuntu-PI -v /home/user/PI:/PI ubuntu /bin/bash```
 3. Verificar que el container se haya creado correctamente ejecutando `docker ps --all`. El nombre `ubuntu-PI` deberia aparecer en pantalla junto al resto de los containers que tengan (si es que ya tenian docker)
 
 ## Como compilo con Docker
